@@ -9,3 +9,48 @@ main {
   margin-top: 10px;
   margin-right: 3px;
 }
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+.modal {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--clr-white);
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: var(--radius);
+  text-transform: capitalize;
+}
+
+.modal p {
+  margin-bottom: 0;
+  color: var(--clr-red-dark);
+}
+
+@media screen and (max-width: 768px) {
+  .remove {
+    margin-top: 0.45rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  div.cont {
+    margin-top: 70px;
+  }
+}

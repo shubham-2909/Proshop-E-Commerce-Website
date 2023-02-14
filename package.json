@@ -1,5 +1,6 @@
 {
   "name": "proshop",
+  "proxy": "http://127.0.0.1:5000",
   "version": "1.0.0",
   "description": "MERN shopping application",
   "main": "app.js",
@@ -8,7 +9,7 @@
     "start": "node backend/app",
     "server": "nodemon backend/app",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run client\" \"npm start\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d"
   },
@@ -20,6 +21,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.8.4"
   },
   "devDependencies": {
